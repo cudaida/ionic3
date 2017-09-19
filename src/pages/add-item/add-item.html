@@ -6,11 +6,11 @@
 -->
 <ion-header>
 
-  <ion-toolbar color="secondary">
+  <ion-toolbar color="primary">
     <ion-title>AddItem</ion-title>
     <ion-buttons end>
       <button ion-button icon only (click)="close()"><ion-icon name="close"></ion-icon></button>
-    </ion-buttons>
+    </ion-buttons> 
   </ion-toolbar>
 
 </ion-header>
@@ -20,7 +20,7 @@
   <ion-list>
     <ion-item>
       <ion-label floating>
-        Title
+          Title
       </ion-label>
       <ion-input type="text" [(ngModel)]="title"></ion-input>
     </ion-item>

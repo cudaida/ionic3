@@ -11,8 +11,8 @@ import { DataProvider } from '../../providers/data/data';
 export class HomePage {
   public items = [];
   constructor(public navCtrl: NavController, public modalCtrl: ModalController, public dataService: DataProvider) {
-    this.dataService.getData().then((todos)=> {
-      if(todos) {
+    this.dataService.getData().then((todos) => {
+      if (todos) {
         this.items = JSON.parse(todos);
       }
     })

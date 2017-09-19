@@ -7,12 +7,11 @@ export class DataProvider {
     console.log('Hello DataProvider Provider');
   }
   getData() {
-    return this.storage.get('todos');  
+    return this.storage.get('todos');
   }
- 
-  save(data){
+
+  save(data) {
     let newData = JSON.stringify(data);
     this.storage.set('todos', newData);
   }
- 
 }

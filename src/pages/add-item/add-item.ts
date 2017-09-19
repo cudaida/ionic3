@@ -10,13 +10,13 @@ import { IonicPage, NavController, NavParams,ViewController } from 'ionic-angula
 export class AddItemPage {
   title;
   description;
+  isenabled:boolean= false;
   constructor(public navCtrl: NavController, public navParams: NavParams, public view: ViewController) {
   }
-
   saveItem(){
     let newItem = {
       title: this.title,
-      description: this.description
+      description: this.description, 
     };
     this.view.dismiss(newItem);
   }
